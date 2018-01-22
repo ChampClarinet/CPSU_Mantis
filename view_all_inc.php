@@ -75,7 +75,7 @@ $t_filter_position = config_get( 'filter_position' );
 
 # -- ====================== FILTER FORM ========================= --
 if( ( $t_filter_position & FILTER_POSITION_TOP ) == FILTER_POSITION_TOP ) {
-	filter_draw_selection_area( $f_page_number );
+	//filter_draw_selection_area( $f_page_number );
 }
 # -- ====================== end of FILTER FORM ================== --
 
@@ -112,10 +112,10 @@ if( ( $t_filter_position & FILTER_POSITION_TOP ) == FILTER_POSITION_TOP ) {
 			<div class="btn-group pull-left">
 		<?php
 			# -- Print and Export links --
-			print_small_button( 'print_all_bug_page.php', lang_get( 'print_all_bug_page_link' ) );
+			/*print_small_button( 'print_all_bug_page.php', lang_get( 'print_all_bug_page_link' ) );
 			print_small_button( 'csv_export.php', lang_get( 'csv_export' ) );
 			print_small_button( 'excel_xml_export.php', lang_get( 'excel_export' ) );
-
+*/
 			$t_event_menu_options = $t_links = event_signal('EVENT_MENU_FILTER');
 
 			foreach ($t_event_menu_options as $t_plugin => $t_plugin_menu_options) {
@@ -212,33 +212,33 @@ write_bug_rows( $t_rows );
 <?php
 # -- ====================== MASS BUG MANIPULATION =================== --
 # @@@ ideally buglist-footer would be in <tfoot>, but that's not possible due to global g_checkboxes_exist set via write_bug_rows()
-?>
+?><!--
 	<div class="form-inline pull-left">
 <?php
-		if( $g_checkboxes_exist ) {
+/*		if( $g_checkboxes_exist ) {
 			echo '<label class="inline">';
 			echo '<input class="ace check_all input-sm" type="checkbox" id="bug_arr_all" name="bug_arr_all" value="all" />';
 			echo '<span class="lbl padding-6">' . lang_get( 'select_all' ) . ' </span > ';
 			echo '</label>';
 		}
 		if( $g_checkboxes_exist ) {
-?>
+*/?>
 			<select name="action" class="input-sm">
-				<?php print_all_bug_action_option_list($t_unique_project_ids) ?>
+				<?php /*print_all_bug_action_option_list($t_unique_project_ids) */?>
 			</select>
-			<input type="submit" class="btn btn-primary btn-white btn-sm btn-round" value="<?php echo lang_get('ok'); ?>"/>
+			<input type="submit" class="btn btn-primary btn-white btn-sm btn-round" value="<?php /*echo lang_get('ok'); */?>"/>
 <?php
-		} else {
+/*		} else {
 			echo '&#160;';
 		}
-?>
+*/?>
 			</div>
 			<div class="btn-group pull-right">
 				<?php
-					$f_filter = gpc_get_int('filter', 0);
+/*					$f_filter = gpc_get_int('filter', 0);
 					print_page_links('view_all_bug_page.php', 1, $t_page_count, (int)$f_page_number, $f_filter);
-				?>
-			</div>
+				*/?>
+			</div>-->
 <?php # -- ====================== end of MASS BUG MANIPULATION ========================= -- ?>
 </div>
 

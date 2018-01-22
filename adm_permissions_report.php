@@ -169,6 +169,7 @@ if( config_get( 'enable_project_documentation' ) == ON ) {
 }
 
 # Custom Fields
+/*
 echo get_section_begin_apr( lang_get( 'custom_fields_setup' ) );
 echo get_capability_row( lang_get( 'manage_custom_field_link' ), config_get( 'manage_custom_fields_threshold' ) );
 echo get_capability_row( lang_get( 'link_custom_fields_to_projects' ), config_get( 'custom_field_link_threshold' ) );
@@ -194,5 +195,5 @@ echo get_capability_row( lang_get( 'add_profiles' ), config_get( 'add_profile_th
 echo get_capability_row( lang_get( 'manage_users_link' ), config_get( 'manage_user_threshold' ) );
 echo get_capability_row( lang_get( 'notify_of_new_user_created' ), config_get( 'notify_new_user_created_threshold_min' ) );
 echo get_section_end();
-
+*/
 layout_page_end();

@@ -282,7 +282,7 @@ if( $t_show_attachments ) {
 	if( $t_show_reproducibility ) {
 ?>
 
-	<tr>
+	<tr hidden>
 		<th class="category">
 			<label for="reproducibility"><?php print_documentation_link( 'reproducibility' ) ?></label>
 		</th>
@@ -362,7 +362,7 @@ if( $t_show_attachments ) {
 	</tr>
 <?php } ?>
 <?php if( $t_show_platform || $t_show_os || $t_show_os_version ) { ?>
-	<tr>
+	<tr hidden>
 		<th class="category">
 			<label for="profile_id"><?php echo lang_get( 'select_profile' ) ?></label>
 		</th>
@@ -553,7 +553,7 @@ if( $t_show_attachments ) {
 	</tr>
 
 <?php if( $t_show_steps_to_reproduce ) { ?>
-		<tr>
+		<tr hidden>
 			<th class="category">
 				<label for="steps_to_reproduce"><?php print_documentation_link( 'steps_to_reproduce' ) ?></label>
 			</th>
@@ -698,7 +698,7 @@ if( $t_show_attachments ) {
 <?php
 	}
 ?>
-	<tr>
+	<tr hidden>
 		<th class="category">
 			<?php print_documentation_link( 'report_stay' ) ?>
 		</th>

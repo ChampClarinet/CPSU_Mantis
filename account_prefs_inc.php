@@ -116,7 +116,7 @@ function edit_account_prefs( $p_user_id = null, $p_error_if_protected = true, $p
 	<div class="table-responsive">
 	<table class="table table-bordered table-condensed table-striped">
 
-	<tr hidden>
+	<tr>
 		<td class="category">
 			<?php echo lang_get( 'default_project' ) ?>
 		</td>
@@ -167,7 +167,7 @@ function edit_account_prefs( $p_user_id = null, $p_error_if_protected = true, $p
 		</td>
 	</tr>
 	<?php if( ON == config_get( 'enable_email_notification' ) ) { ?>
-		<tr>
+		<tr hidden>
 			<td class="category">
 				<?php echo lang_get( 'email_on_new' ) ?>
 			</td>
@@ -184,7 +184,7 @@ function edit_account_prefs( $p_user_id = null, $p_error_if_protected = true, $p
 					</select>
 			</td>
 		</tr>
-		<tr>
+		<tr hidden>
 			<td class="category">
 				<?php echo lang_get( 'email_on_assigned' ) ?>
 			</td>
@@ -218,7 +218,7 @@ function edit_account_prefs( $p_user_id = null, $p_error_if_protected = true, $p
 					</select>
 			</td>
 		</tr>
-		<tr>
+		<tr hidden>
 			<td class="category">
 				<?php echo lang_get( 'email_on_resolved' ) ?>
 			</td>
@@ -252,7 +252,7 @@ function edit_account_prefs( $p_user_id = null, $p_error_if_protected = true, $p
 					</select>
 			</td>
 		</tr>
-		<tr>
+		<tr hidden>
 			<td class="category">
 				<?php echo lang_get( 'email_on_reopened' ) ?>
 			</td>
@@ -286,7 +286,7 @@ function edit_account_prefs( $p_user_id = null, $p_error_if_protected = true, $p
 					</select>
 			</td>
 		</tr>
-		<tr>
+		<tr hidden>
 			<td class="category">
 				<?php echo lang_get( 'email_on_status_change' ) ?>
 			</td>
@@ -303,7 +303,7 @@ function edit_account_prefs( $p_user_id = null, $p_error_if_protected = true, $p
 					</select>
 			</td>
 		</tr>
-		<tr>
+		<tr hidden>
 			<td class="category">
 				<?php echo lang_get( 'email_on_priority_change' ) ?>
 			</td>
@@ -363,7 +363,7 @@ function edit_account_prefs( $p_user_id = null, $p_error_if_protected = true, $p
 			<input type="hidden" name="email_bugnote_limit" value="<?php echo $t_pref->email_bugnote_limit ?>" />
 			<input type="hidden" name="email_full_issue" value="<?php echo $t_email_full_issue ?>" />
 <?php } ?>
-	<tr>
+	<tr hidden>
 		<td class="category">
 			<?php echo lang_get( 'timezone' ) ?>
 		</td>
@@ -373,7 +373,7 @@ function edit_account_prefs( $p_user_id = null, $p_error_if_protected = true, $p
 					</select>
 		</td>
 	</tr>
-	<tr>
+	<tr hidden>
 		<td class="category">
 			<?php echo lang_get( 'language' ) ?>
 		</td>

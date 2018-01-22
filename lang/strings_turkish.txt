@@ -69,17 +69,17 @@
 $s_directionality = 'ltr';
 
 # Group commands menuitems
-$s_actiongroup_menu_move = 'Move';
-$s_actiongroup_menu_copy = 'Copy';
+$s_actiongroup_menu_move = 'ตัด';
+$s_actiongroup_menu_copy = 'คัดลอก';
 $s_actiongroup_menu_assign = 'Assign';
-$s_actiongroup_menu_close = 'Close';
-$s_actiongroup_menu_delete = 'Delete';
+$s_actiongroup_menu_close = 'ปิด';
+$s_actiongroup_menu_delete = 'ลบ';
 $s_actiongroup_menu_resolve = 'Resolve';
-$s_actiongroup_menu_update_priority = 'Update Priority';
-$s_actiongroup_menu_update_status = 'Update Status';
+$s_actiongroup_menu_update_priority = 'อัพเดทความสำคัญ';
+$s_actiongroup_menu_update_status = 'อัพเดทสถานะ';
 $s_actiongroup_menu_update_severity = 'Update Severity';
 $s_actiongroup_menu_update_view_status = 'Update View Status';
-$s_actiongroup_menu_update_category = 'Update Category';
+$s_actiongroup_menu_update_category = 'แก้ไขประเภท';
 $s_actiongroup_menu_set_sticky = 'Set/Unset Sticky';
 $s_actiongroup_menu_update_field = 'Update %1$s';
 $s_actiongroup_menu_update_product_version = 'Update Product Version';
@@ -87,13 +87,13 @@ $s_actiongroup_menu_update_target_version = 'Update Target Version';
 $s_actiongroup_menu_update_fixed_in_version = 'Update Fixed in Version';
 $s_actiongroup_menu_update_product_build = 'Update Product Build';
 $s_actiongroup_menu_update_due_date = 'Update Due Date';
-$s_actiongroup_menu_add_note = 'Add Note';
-$s_actiongroup_menu_attach_tags = 'Attach Tags';
+$s_actiongroup_menu_add_note = 'เพิ่มโน๊ต';
+$s_actiongroup_menu_attach_tags = 'เพิ่มแท็ก';
 $s_actiongroup_bugs = 'Selected Issues';
 $s_actiongroup_error_issue_is_readonly = 'Issue is readonly.';
 
 # new strings:
-$s_all_projects = 'รวมโปรเจค';
+$s_all_projects = 'โปรเจคทั้งหมด';
 $s_move_bugs = 'Move Issues';
 $s_operation_successful = 'Operation successful.';
 $s_operation_warnings = 'Operation completed with warnings.';
@@ -141,8 +141,8 @@ $s_delete_bugnote_sure_msg = 'Are you sure you wish to delete this note?';
 $s_bug_relationships = 'Relationships';
 $s_empty_password_sure_msg = 'The user has an empty password. Are you sure that is what you want?';
 $s_empty_password_button = 'Use Empty Password';
-$s_reauthenticate_title = 'Authenticate';
-$s_reauthenticate_message = 'You are visiting a secure page, and your secure session has expired. Please authenticate yourself to continue.';
+$s_reauthenticate_title = 'ยืนยันตัวตน';
+$s_reauthenticate_message = 'คุณกำลังเข้าถึงเพจที่มีการรักษาความปลอดภัยและเซสชันของคุณได้หมดอายุลง กรุณาใส่รหัสผ่านของคุณใหม่อีกครั้ง';
 
 $s_no_category = '(No Category)';
 $s_global_categories = 'Global Categories';
@@ -172,7 +172,7 @@ $s_bug_deleted = 'Issue Deleted';
 $s_make_private = 'Make Private';
 $s_make_public = 'Make Public';
 
-$s_create_new_project_link = 'Create New Project';
+$s_create_new_project_link = 'สร้างโปรเจค';
 
 $s_login_link = 'ลงชื่อเข้าใช้งาน';
 
@@ -250,9 +250,9 @@ $s_logged_in_as = 'Logged in as';
 
 $s_prefix_for_deleted_users = 'user';
 
-$s_administrator = 'administrator';
-$s_myself = 'Myself';
-$s_default_access_level = 'Default access level';
+$s_administrator = 'ผู้ดูแลระบบ';
+$s_myself = 'ตัวเอง';
+$s_default_access_level = 'ระดับการเข้าถึงเริ่มต้น';
 
 $s_issue_status_percentage = 'Issue Status Percentage';
 
@@ -261,9 +261,9 @@ $s_access_levels_enum_string = '10:viewer,25:reporter,40:updater,55:developer,70
 $s_no_access = 'no access';
 $s_project_status_enum_string = '10:development,30:release,50:stable,70:obsolete';
 $s_project_view_state_enum_string = '10:public,50:private';
-$s_view_state_enum_string = '10:public,50:private';
+$s_view_state_enum_string = '10:สาธารณะ,50:ส่วนตัว';
 
-$s_priority_enum_string = '10:none,20:low,30:normal,40:high,50:urgent,60:immediate';
+$s_priority_enum_string = '10:ไม่มี,20:ต่ำ,30:กลาง,40:สูง,50:เร่งด่วน,60:ด่วนที่สุด';
 $s_severity_enum_string = '10:feature,20:trivial,30:text,40:tweak,50:minor,60:major,70:crash,80:block';
 $s_reproducibility_enum_string = '10:always,30:sometimes,50:random,70:have not tried,90:unable to reproduce,100:N/A';
 $s_status_enum_string = '10:new,20:feedback,30:acknowledged,40:confirmed,50:assigned,80:resolved,90:closed';
@@ -321,13 +321,13 @@ $s_email_notification_title_for_action_related_issue_deleted = 'The RELATED issu
 $s_email_notification_title_for_action_monitor = 'Issue %1$s is now monitored by user %2$s.';
 
 $s_email_reporter = 'Reported By';
-$s_email_handler = 'Assigned To';
+$s_email_handler = 'มอบหมายให้';
 $s_email_project = 'Project';
 $s_email_bug = 'Issue ID';
-$s_email_category = 'Category';
+$s_email_category = 'ประเภท';
 $s_email_reproducibility = 'Reproducibility';
-$s_email_severity = 'Severity';
-$s_email_priority = 'Priority';
+$s_email_severity = 'ความรุนแรงของปัญหา';
+$s_email_priority = 'ความสำคัญ';
 $s_email_status = 'Status';
 $s_email_resolution = 'Resolution';
 $s_email_duplicate = 'Duplicate';
@@ -337,7 +337,7 @@ $s_email_date_submitted = 'Date Submitted';
 $s_email_last_modified = 'Last Modified';
 $s_email_summary = 'Summary';
 $s_email_description = 'Description';
-$s_email_additional_information = 'Additional Information';
+$s_email_additional_information = 'รายละเอียดเพิ่มเติม';
 $s_email_steps_to_reproduce = 'Steps to Reproduce';
 $s_email_tag = 'Tags';
 $s_email_due_date = 'Due Date';
@@ -391,7 +391,7 @@ $s_refresh_delay = 'รีเฟรชภายใน';
 $s_minutes = 'นาที';
 $s_redirect_delay = 'redirect ภายใน';
 $s_seconds = 'วินาที';
-$s_with_minimum_severity = 'ส่งให้';
+$s_with_minimum_severity = 'ด้วยความรุนแรงน้อยที่สุด';
 $s_bugnote_order = 'เรียงลำดับ';
 $s_bugnote_order_asc = 'จากน้อยไปมาก';
 $s_bugnote_order_desc = 'จากมากไปน้อย';
@@ -506,13 +506,13 @@ $s_monitor_bug_button = 'Monitor';
 $s_unmonitor_bug_button = 'End Monitoring';
 
 # bugnote_add_inc.php
-$s_upload_file = 'Upload File';
-$s_upload_files = 'Upload Files';
-$s_select_file = 'Select File';
-$s_select_files = 'Select Files';
-$s_upload_file_button = 'Upload File';
-$s_upload_files_button = 'Upload Files';
-$s_max_file_size_label = 'Maximum size:';
+$s_upload_file = 'อัพโหลดไฟล์';
+$s_upload_files = 'อัพโหลดไฟล์';
+$s_select_file = 'เลือกไฟล์';
+$s_select_files = 'เลือกไฟล์';
+$s_upload_file_button = 'อัพโหลด';
+$s_upload_files_button = 'อัพโหลด';
+$s_max_file_size_label = 'ขนาดไฟล์สูงสุด:';
 $s_file_size_info = '%1$s %2$s'; # $1 = size, $2 = unit (e.g. kb, bytes)
 
 # bug_reopen.php
@@ -561,18 +561,18 @@ $s_bug_updated_msg = 'Issue has been successfully updated...';
 # bug_update_page.php
 $s_back_to_bug_link = 'Back To Issue';
 $s_update_simple_link = 'Update Simple';
-$s_updating_bug_advanced_title = 'Updating Issue Information';
+$s_updating_bug_advanced_title = 'อัพเดทข้อมูลรายงาน';
 $s_id = 'ID';
-$s_category = 'Category';
-$s_severity = 'Severity';
-$s_reproducibility = 'Reproducibility';
+$s_category = 'ประเภท';
+$s_severity = 'ความเร่งด่วน';
+$s_reproducibility = 'การเกิดซ้ำ';
 $s_date_submitted = 'Date Submitted';
 $s_last_update = 'Last Update';
-$s_reporter = 'Reporter';
-$s_assigned_to = 'Assigned To';
-$s_priority = 'Priority';
-$s_resolution = 'Resolution';
-$s_status = 'Status';
+$s_reporter = 'ผู้รายงาน';
+$s_assigned_to = 'มอบหมายให้';
+$s_priority = 'ความสำคัญ';
+$s_resolution = 'การแก้ไข';
+$s_status = 'สถานะ';
 $s_duplicate_id = 'Duplicate ID';
 $s_os = 'ระบบปฏิบัติการ';
 $s_projection = 'Projection';
@@ -583,8 +583,8 @@ $s_build = 'Build';
 $s_fixed_in_version = 'Fixed in Version';
 $s_target_version = 'Target Version';
 $s_votes = 'Votes';
-$s_summary = 'Summary';
-$s_description = 'Description';
+$s_summary = 'ชื่องาน';
+$s_description = 'รายละเอียด';
 $s_steps_to_reproduce = 'Steps To Reproduce';
 $s_update_information_button = 'Update Information';
 $s_sticky_issue = 'Sticky Issue';
@@ -621,7 +621,7 @@ $s_edit_bugnote_title = 'Edit Note';
 
 # bugnote_inc.php
 $s_no_bugnotes_msg = 'There are no notes attached to this issue.';
-$s_delete_link = 'Delete';
+$s_delete_link = 'ลบ';
 $s_add_bugnote_title = 'Add Note';
 $s_add_bugnote_button = 'Add Note';
 $s_bugnote_edit_link = 'Edit';
@@ -656,16 +656,16 @@ $s_please_report = 'Please report this to the %1$s.';
 $s_click_to_login = 'เข้าสู่ระบบ';
 
 # login.php
-$s_warning_plain_password_authentication = '<strong>Warning:</strong> Plain password authentication is used, this will expose your passwords to administrators.';
-$s_warning_default_administrator_account_present = '<strong>Warning:</strong> You should disable the default \'administrator\' account or change its password.';
+$s_warning_plain_password_authentication = '<strong>คำเตือน:</strong> ขณะนี้การล็อคอินเป็นแบบล็อคอินโดยไม่ซ่อนพาสเวิร์ด ซึ่งจะทำให้ผู้ดูแลระบบเห็นพาสเวิร์ดของคุณได้';
+$s_warning_default_administrator_account_present = '<strong>คำเตือน:</strong> ควรเปลี่ยนรหัสผ่านของ \'administrator\' หรือยกเลิกรหัสผ่านแบบดีฟอล์ต';
 $s_warning_admin_directory_present = '<strong>คำเตือน:</strong> ควรลบ "admin" ออกหรือ จำกัด การเข้าถึง';
-$s_warning_change_setting = '<strong>Warning:</strong> "%1$s" is not set to its default value (%2$s).';
+$s_warning_change_setting = '<strong>คำเตือน:</strong> "%1$s" ไม่ได้ถูกเซ็ตให้เป็นค่าเริ่มต้น (%2$s).';
 $s_warning_security_hazard = 'This is a potential security hazard as it can expose sensitive information.';
 $s_warning_integrity_hazard = 'This will cause MantisBT to continue when errors occurs and may lead to system/data integrity issues.';
 $s_warning_debug_email = '<strong>Warning:</strong> "<code>debug_email</code>" is not set to <code>OFF</code>, all notification e-mails will be sent to "%1$s".';
 $s_error_database_no_schema_version = '<strong>Error:</strong> Your Database schema version is 0. This can happen either because the database is corrupt or the value of "database_version" could not be retrieved from the config table or the database structure is from an outdated version of MantisBT (pre 1.0.0).';
-$s_error_database_version_out_of_date_2 = '<strong>Warning:</strong> The database structure may be out of date. Please upgrade <a href="admin/install.php">here</a> before logging in.';
-$s_error_code_version_out_of_date = '<strong>Warning:</strong> The database structure is more recent than the installed code. Please upgrade the code.';
+$s_error_database_version_out_of_date_2 = '<strong>คำเตือน:</strong>โครงสร้างของดาตาเบสอาจเก่าเกินไป กรุณาอัพเกรด <a href="admin/install.php">ที่นี่</a> ก่อนทำการล็อคอิน';
+$s_error_code_version_out_of_date = '<strong>คำเตือน:</strong> The database structure is more recent than the installed code. Please upgrade the code.';
 
 # login_page.php
 $s_login_page_info = 'ยินดีต้อนรับ';
@@ -711,47 +711,47 @@ $s_created_user_part1 = 'Created user';
 $s_created_user_part2 = 'with an access level of';
 
 # manage_create_user_page.php
-$s_create_new_account_title = 'Create New Account';
+$s_create_new_account_title = 'สร้างบัญชีผู้ใช้ใหม่';
 $s_verify_password = 'Verify Password';
-$s_enabled = 'Enabled';
+$s_enabled = 'ใช้งาน';
 $s_enabled_label = 'Enabled';
-$s_protected = 'Protected';
+$s_protected = 'ป้องกัน';
 $s_protected_label = 'Protected';
 $s_create_user_button = 'Create User';
 
 # manage_page.php
 $s_hide_disabled = 'Hide Disabled';
-$s_filter_button = 'Apply Filter';
+$s_filter_button = 'ใช้งานตัวกรอง';
 $s_default_filter = 'Default Filter';
 $s_create_filter_link = 'Create Permalink'; # Permalink = Permanent Link
 $s_create_short_link = 'Create Short Link';
 $s_filter_permalink = 'Following is a permanent link to the currently configured filter:';
-$s_manage_users_link = 'Manage Users';
-$s_manage_projects_link = 'Manage Projects';
-$s_manage_custom_field_link = 'Manage Custom Fields';
+$s_manage_users_link = 'บัญชีผู้ใช้';
+$s_manage_projects_link = 'โปรเจค';
+$s_manage_custom_field_link = 'ฟีลด์ที่กำหนดเอง';
 $s_manage_global_profiles_link = 'Manage Global Profiles';
 $s_manage_plugin_link = 'Manage Plugins';
-$s_permissions_summary_report = 'Permissions Report';
-$s_manage_config_link = 'Manage Configuration';
+$s_permissions_summary_report = 'รายงานการเข้าถึง';
+$s_manage_config_link = 'จัดการคอนฟิก';
 $s_manage_threshold_config = 'Workflow Thresholds';
 $s_manage_email_config = 'E-mail Notifications';
 $s_manage_workflow_config = 'Workflow Transitions';
 $s_manage_workflow_graph = 'Workflow Graph';
-$s_manage_tags_link = 'Manage Tags';
-$s_create_new_account_link = 'Create New Account';
-$s_projects_link = 'Projects';
+$s_manage_tags_link = 'จัดการแท็ก';
+$s_create_new_account_link = 'สร้างบัญชี';
+$s_projects_link = 'โปรเจค';
 $s_documentation_link = 'Documentation';
 $s_new_accounts_title = 'New Accounts';
 $s_1_week_title = '1 Week';
 $s_never_logged_in_title = 'Never Logged In';
 $s_prune_accounts = 'Prune Accounts';
-$s_hide_inactive = 'Hide Inactive';
-$s_show_disabled = 'Show Disabled';
-$s_manage_accounts_title = 'Manage Accounts';
+$s_hide_inactive = 'ซ่อนบัญชีที่ไม่ใช้งาน';
+$s_show_disabled = 'แสดงบัญชีที่ถูกระงับ';
+$s_manage_accounts_title = 'บัญชีผู้ใช้';
 $s_p = 'p';
-$s_date_created = 'Date Created';
-$s_last_visit = 'Last Visit';
-$s_last_visit_label = 'Last Visit:';
+$s_date_created = 'ถูกสร้างเมื่อ';
+$s_last_visit = 'ล็อคอินล่าสุด';
+$s_last_visit_label = 'เข้าถึงล่าสุด:';
 $s_edit_user_link = 'Edit User';
 
 # manage_custom_field_edit_page.php
@@ -900,27 +900,27 @@ $s_project_delete_button = 'Delete Project';
 $s_edit_project_title = 'Edit Project';
 $s_project_name = 'Project Name';
 $s_project_name_label = 'Project Name:';
-$s_view_status = 'View Status';
-$s_public = 'public';
-$s_private = 'private';
+$s_view_status = 'สถานะการมองเห็น';
+$s_public = 'สาธารณะ';
+$s_private = 'ส่วนตัว';
 $s_update_project_button = 'Update Project';
 $s_delete_project_button = 'Delete Project';
 $s_copy_from = 'Copy From';
 $s_copy_to = 'Copy To';
 $s_categories_and_version_title = 'Categories and Versions';
 $s_categories = 'Categories';
-$s_add_category_button = 'Add Category';
-$s_add_and_edit_category_button = 'Add and Edit Category';
+$s_add_category_button = 'เพิ่ม Category';
+$s_add_and_edit_category_button = 'เพิ่มและแก้ไข Category';
 $s_versions = 'Versions';
 $s_add_version_button = 'Add Version';
 $s_add_and_edit_version_button = 'Add and Edit Version';
-$s_edit_link = 'Edit';
+$s_edit_link = 'แก้ไข';
 $s_actions = 'Actions';
 $s_version = 'Version';
 $s_version_label = 'Version:';
 $s_timestamp = 'Timestamp';
 $s_update = 'Update';
-$s_subprojects = 'Subprojects';
+$s_subprojects = 'โปรเจคย่อย';
 $s_add_subproject = 'Add as Subproject';
 $s_create_new_subproject_link = 'Create New Subproject';
 $s_unlink_link = 'Unlink';
@@ -931,9 +931,9 @@ $s_hide_global_users = 'Hide Users with Global Access';
 $s_add_project_title = 'Add Project';
 $s_upload_file_path = 'Upload File Path';
 $s_add_project_button = 'Add Project';
-$s_projects_title = 'Projects';
-$s_projects_title_label = 'Projects';
-$s_name = 'Name';
+$s_projects_title = 'โปรเจค';
+$s_projects_title_label = 'โปรเจค';
+$s_name = 'ชื่อ';
 
 # manage_proj_update.php
 $s_project_updated_msg = 'Project has been successfully updated...';
@@ -1001,7 +1001,7 @@ $s_email_user_updated_msg = 'Your account has been updated by an administrator. 
 # menu_inc.php
 $s_main_link = 'Main';
 $s_view_bugs_link = 'ดูปัญหา';
-$s_report_bug_link = 'Report Issue';
+$s_report_bug_link = 'รายงาน';
 $s_changelog_link = 'เปลี่ยนบันทึก';
 $s_roadmap_link = 'แผนการดำเนินงาน';
 $s_summary_link = 'สรุป';
@@ -1117,15 +1117,15 @@ $s_submission_thanks_msg = 'Thank you for your submission.';
 
 # report_bug_advanced_page.php
 $s_simple_report_link = 'Simple Report';
-$s_enter_report_details_title = 'Enter Issue Details';
-$s_required = 'required';
+$s_enter_report_details_title = 'กรอกรายละเอียดรายงาน';
+$s_required = 'จำเป็นต้องกรอก';
 $s_select_category = 'Select Category';
 $s_select_reproducibility = 'Select Reproducibility';
 $s_select_severity = 'Select Severity';
 $s_or_fill_in = 'Or Fill In';
-$s_assign_to = 'Assign To';
-$s_additional_information = 'Additional Information';
-$s_submit_report_button = 'Submit Issue';
+$s_assign_to = 'มอบหมายให้';
+$s_additional_information = 'รายละเอียดเพิ่มเติม';
+$s_submit_report_button = 'รายงาน';
 $s_check_report_more_bugs = 'check to report more issues';
 
 # report_bug_page.php
@@ -1195,15 +1195,15 @@ $s_reporter_stats = 'Reporter Stats';
 $s_orct = '(open/resolved/closed/total)';
 
 # view_all_bug_page.php
-$s_any = 'ใคร';
+$s_any = 'ทั้งหมด';
 $s_all = 'ทั้งหมด';
 $s_show = 'แสดง';
 $s_changed = 'Highlight changed (hours)';
-$s_viewing_bugs_title = 'Viewing Issues';
-$s_updated = 'Updated';
+$s_viewing_bugs_title = 'รายงานทั้งหมด';
+$s_updated = 'อัพเดทล่าสุด';
 $s_sticky = 'Show Sticky Issues';
-$s_sort = 'Sort by';
-$s_issue_id = 'Issue #';
+$s_sort = 'เรียงลำดับ';
+$s_issue_id = 'ปัญหา #';
 $s_recently_visited = 'Recently Visited';
 $s_priority_abbreviation = 'P';
 $s_note_user_id = 'Note By';
@@ -1214,11 +1214,11 @@ $s_filter_match_any = 'Any Condition';
 # view_all_inc.php
 $s_none = 'none';
 $s_current = 'current';
-$s_search = 'Search';
+$s_search = 'ค้นหา';
 $s_view_prev_link = 'View Prev';
 $s_view_next_link = 'View Next';
-$s_prev = 'Prev';
-$s_next = 'Next';
+$s_prev = 'ก่อนหน้า';
+$s_next = 'ต่อไป';
 $s_first = 'First';
 $s_last = 'Last';
 $s_start_date_label = 'Start Date:';
@@ -1326,18 +1326,18 @@ $s_confirm_custom_field_deletion = 'Are you sure you want to delete this custom 
 $s_field_delete_button = 'Delete Field';
 $s_confirm_custom_field_unlinking = 'Are you sure you want to unlink this custom field from the project? The values will not be deleted as long as the custom field itself is not deleted.';
 $s_field_remove_button = 'Remove Field';
-$s_hide_status = 'Hide Status';
-$s_filter_closed = 'Closed';
+$s_hide_status = 'สถานะการซ่อน';
+$s_filter_closed = 'closed';
 $s_filter_resolved = 'Resolved';
 $s_hide_closed = 'Hide Closed';
 $s_hide_resolved = 'Hide Resolved';
 $s_and_above = 'And Above';
 $s_advanced_filters = 'Advanced Filters';
 $s_simple_filters = 'Simple Filters';
-$s_monitored_by = 'Monitored By';
-$s_attachments = 'attachment(s)';
-$s_bytes = 'bytes';
-$s_kb = 'KB';
+$s_monitored_by = 'ผู้ดูแล';
+$s_attachments = 'ไฟล์แนบ';
+$s_bytes = 'ไบต์';
+$s_kb = 'กิโลไบต์';
 $s_attachment_missing = 'Attachment missing';
 $s_attachment_count = 'Attachment count';
 $s_view_attachments_for_issue = 'View %1$d attachment(s) for issue #%2$d';
@@ -1406,7 +1406,7 @@ $s_horizontal = 'Horizontal';
 $s_view_issue = 'View Issue';
 
 # Permissions report
-$s_perm_rpt_capability = 'Capability';
+$s_perm_rpt_capability = 'ประเภทผู้ใช้';
 $s_view = 'View';
 $s_issues = 'Issues';
 $s_report_issue = 'Report an issue';
@@ -1434,7 +1434,7 @@ $s_delete_attachments = 'Delete attachments';
 $s_delete_attachment_button = 'Delete';
 $s_delete_attachment_sure_msg = 'Are you sure you wish to delete this attachment?';
 $s_upload_issue_attachments = 'Upload issue attachments';
-$s_filters = 'Filters';
+$s_filters = 'ตัวกรอง';
 $s_save_filters = 'Save filters';
 $s_save_filters_as_shared = 'Save filters as shared';
 $s_use_saved_filters = 'Use saved filters';
@@ -1490,29 +1490,29 @@ $s_wiki = 'Wiki';
 
 # Tagging
 $s_tags = 'Tags';
-$s_tag_details = 'Tag Details: %1$s';
+$s_tag_details = 'รายละเอียดแท็ก: %1$s';
 $s_tag_id = 'Tag ID';
-$s_tag_name = 'Name';
-$s_tag_creator = 'Creator';
-$s_tag_created = 'Date Created';
-$s_tag_updated = 'Last Updated';
-$s_tag_description = 'Tag Description';
+$s_tag_name = 'ชื่อแท็ก';
+$s_tag_creator = 'ผู้สร้าง';
+$s_tag_created = 'สร้างเมื่อ';
+$s_tag_updated = 'แก้ไขล่าสุด';
+$s_tag_description = 'รายละเอียดแท็ก';
 $s_tag_statistics = 'Usage Statistics';
-$s_tag_update = 'Update Tag: %1$s';
-$s_tag_update_return = 'Back to Tag';
-$s_tag_update_button = 'Update Tag';
-$s_tag_delete_button = 'Delete Tag';
-$s_tag_delete_message = 'Are you sure you wish to delete this tag?';
+$s_tag_update = 'อัพเดทแท็ก: %1$s';
+$s_tag_update_return = 'กลับไปที่แท็ก';
+$s_tag_update_button = 'อัพเดทแท็ก';
+$s_tag_delete_button = 'ลบแท็ก';
+$s_tag_delete_message = 'คุณแน่ใจหรือไม่ที่จะลบแท็กนี้';
 $s_tag_existing = 'Existing tags';
 $s_tag_none_attached = 'No tags attached.';
 $s_tag_attach = 'Attach';
-$s_tag_attach_long = 'Attach Tags';
+$s_tag_attach_long = 'เพิ่มแท็ก';
 $s_tag_attach_failed = 'Tag attachment failed.';
 $s_tag_detach = 'Detach "%1$s"';
-$s_tag_separate_by = '(Separate by "%1$s")';
-$s_tag_invalid_name = 'Invalid tag name.';
-$s_tag_create_denied = 'Create permission denied.';
-$s_tag_attach_denied = 'Attach permission denied.';
+$s_tag_separate_by = '(แบ่งโดย "%1$s")';
+$s_tag_invalid_name = 'ชื่อแท็กไม่ถูกต้อง';
+$s_tag_create_denied = 'คุณไม่มีสิทธิ์ในการสร้างแท็ก';
+$s_tag_attach_denied = 'คุณไม่มีสิทธิ์ในการติดแท็ก.';
 $s_tag_filter_default = 'Attached Issues (%1$s)';
 $s_tag_history_attached = 'Tag Attached';
 $s_tag_history_detached = 'Tag Detached';
@@ -1520,8 +1520,8 @@ $s_tag_history_renamed = 'Tag Renamed';
 $s_tag_related = 'Related Tags';
 $s_tag_related_issues = 'Shared Issues (%1$s)';
 $s_tag_stats_attached = 'Issues attached: %1$s';
-$s_tag_create = 'Create Tag';
-$s_show_all_tags = 'All';
+$s_tag_create = 'สร้างแท็ก';
+$s_show_all_tags = 'ทั้งหมด';
 
 # Time Tracking
 $s_time_tracking_billing_link = 'Time Tracking';
@@ -1565,7 +1565,7 @@ $s_overdue_since = 'Overdue since %1$s';
 $s_view_account_title = 'User Information';
 
 # view_user_page.php
-$s_manage_user = 'Manage User';
+$s_manage_user = 'จัดการบัญชี';
 
 # separators
 $s_word_separator = '&#32;';
@@ -1608,7 +1608,7 @@ $s_timeline_issue_reopened = '<span class="username">%1$s</span> reopened issue 
 $s_timeline_issue_assigned = '<span class="username">%1$s</span> assigned issue <span class="issue_id">%2$s</span> to <span class="username">%3$s</span>';
 $s_timeline_issue_assigned_to_self = '<span class="username">%1$s</span> picked up issue <span class="issue_id">%2$s</span>';
 $s_timeline_issue_unassigned = '<span class="username">%1$s</span> unassigned issue <span class="issue_id">%2$s</span>';
-$s_timeline_no_activity = 'No activity within time range.';
+$s_timeline_no_activity = 'ไม่มีกิจกรรมภายในช่วงเวลาที่เลือก';
 $s_timeline_title = 'Timeline';
 $s_timeline_more = 'More events...';
 
@@ -1756,7 +1756,7 @@ $MANTIS_ERROR[ERROR_FIELD_TOO_LONG] = 'Field "%1$s" must be shorter or equal to 
 $MANTIS_ERROR[ERROR_API_TOKEN_NAME_NOT_UNIQUE] = 'API token name "%s" is already being used. Please go back and select another one.';
 
 # dropzone.js - placeholders format is defined by the library
-$s_dropzone_default_message = 'Drop files here to upload (or click)';
+$s_dropzone_default_message = 'โยนไฟล์ที่นี่เพื่ออัพโหลด (หรือคลิ๊ก)';
 $s_dropzone_fallback_message = 'Your browser does not support drag\'n\'drop file uploads.';
 $s_dropzone_fallback_text = '';
 $s_dropzone_file_too_big = 'File is too big ({{filesize}}MiB). Max filesize: {{maxFilesize}}MiB.';

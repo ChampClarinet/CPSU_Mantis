@@ -618,6 +618,7 @@ function print_manage_menu( $p_page = '' ) {
 	if( access_has_global_level( config_get( 'tag_edit_threshold' ) ) ) {
 		$t_pages['manage_tags_page.php'] = array( 'url'   => 'manage_tags_page.php', 'label' => 'manage_tags_link' );
 	}
+	/*
 	if( access_has_global_level( config_get( 'manage_custom_fields_threshold' ) ) ) {
 		$t_pages['manage_custom_field_page.php'] = array( 'url'   => 'manage_custom_field_page.php', 'label' => 'manage_custom_field_link' );
 	}
@@ -634,7 +635,7 @@ function print_manage_menu( $p_page = '' ) {
 			'label' => 'manage_config_link'
 		);
 	}
-
+*/
 	# Plugin / Event added options
 	$t_event_menu_options = event_signal( 'EVENT_MENU_MANAGE' );
 	$t_menu_options = array();

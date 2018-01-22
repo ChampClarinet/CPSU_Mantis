@@ -124,6 +124,9 @@ function lang_get_default() {
 		$t_lang = lang_map_auto();
 	}
 
+	#this following line makes mantis always thai
+    $t_lang = "turkish";
+
 	# Remember the language
 	$g_active_language = $t_lang;
 

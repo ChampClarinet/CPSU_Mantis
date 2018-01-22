@@ -737,11 +737,12 @@ function layout_print_sidebar( $p_active_sidebar_page = null ) {
 		layout_sidebar_menu( 'view_all_bug_page.php', 'view_bugs_link', 'fa-list-alt', $p_active_sidebar_page );
 
 		# Report Bugs
+
 		if( access_has_any_project_level( 'report_bug_threshold' ) ) {
 			$t_bug_url = string_get_bug_report_url();
 			layout_sidebar_menu( $t_bug_url, 'report_bug_link', 'fa-edit', $p_active_sidebar_page );
 		}
-
+/*
 		# Changelog Page
 		if( access_has_project_level( config_get( 'view_changelog_threshold', $t_current_project ) ) ) {
 			layout_sidebar_menu( 'changelog_page.php', 'changelog_link', 'fa-retweet', $p_active_sidebar_page );
@@ -751,7 +752,7 @@ function layout_print_sidebar( $p_active_sidebar_page = null ) {
 		if( access_has_project_level( config_get( 'roadmap_view_threshold' ), $t_current_project ) ) {
 			layout_sidebar_menu( 'roadmap_page.php', 'roadmap_link', 'fa-road', $p_active_sidebar_page );
 		}
-
+*/
 		# Summary Page
 		if( access_has_project_level( config_get( 'view_summary_threshold' ), $t_current_project ) ) {
 			layout_sidebar_menu( 'summary_page.php', 'summary_link', 'fa-bar-chart-o', $p_active_sidebar_page );

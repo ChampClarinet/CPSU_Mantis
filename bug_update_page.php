@@ -373,7 +373,7 @@ if( $t_show_priority || $t_show_severity || $t_show_reproducibility ) {
 	} else {
 		$t_spacer += 2;
 	}
-
+/*
 	if( $t_show_severity ) {
 		# Severity
 		echo '<th class="category"><label for="severity">' . lang_get( 'severity' ) . '</label></th>';
@@ -393,7 +393,7 @@ if( $t_show_priority || $t_show_severity || $t_show_reproducibility ) {
 	} else {
 		$t_spacer += 2;
 	}
-
+*/
 	# spacer
 	if( $t_spacer > 0 ) {
 		echo '<td colspan="', $t_spacer, '">&#160;</td>';
@@ -488,7 +488,7 @@ if( $t_show_platform || $t_show_os || $t_show_os_version ) {
 	echo '<tr>';
 
 	$t_spacer = 0;
-
+/*
 	if( $t_show_platform ) {
 		# Platform
 		echo '<th class="category"><label for="platform">' . lang_get( 'platform' ) . '</label></th>';
@@ -542,7 +542,7 @@ if( $t_show_platform || $t_show_os || $t_show_os_version ) {
 	} else {
 		$t_spacer += 2;
 	}
-
+*/
 	# spacer
 	if( $t_spacer > 0 ) {
 		echo '<td colspan="', $t_spacer, '">&#160;</td>';
@@ -646,6 +646,7 @@ if( $t_show_description ) {
 }
 
 # Steps to Reproduce
+/*
 if( $t_show_steps_to_reproduce ) {
 	echo '<tr>';
 	echo '<th class="category"><label for="steps_to_reproduce">' . lang_get( 'steps_to_reproduce' ) . '</label></th>';
@@ -653,7 +654,7 @@ if( $t_show_steps_to_reproduce ) {
 	echo '<textarea class="form-control" ', helper_get_tab_index(), ' cols="80" rows="10" id="steps_to_reproduce" name="steps_to_reproduce">', $t_steps_to_reproduce_textarea, '</textarea>';
 	echo '</td></tr>';
 }
-
+*/
 # Additional Information
 if( $t_show_additional_information ) {
 	echo '<tr>';
@@ -701,6 +702,7 @@ if( $t_custom_fields_found ) {
 }
 
 # Bugnote Text Box
+/*
 $t_default_bugnote_view_status = config_get( 'default_bugnote_view_status' );
 $t_bugnote_private = $t_default_bugnote_view_status == VS_PRIVATE;
 $t_bugnote_class = $t_bugnote_private ? 'form-control bugnote-private' : 'form-control';
@@ -726,7 +728,7 @@ if( access_has_bug_level( config_get( 'private_bugnote_threshold' ), $t_bug_id )
 
 	echo '</td></tr>';
 }
-
+*/
 # Time Tracking (if permitted)
 if( config_get( 'time_tracking_enabled' ) ) {
 	if( access_has_bug_level( config_get( 'time_tracking_edit_threshold' ), $t_bug_id ) ) {
@@ -761,8 +763,10 @@ if( $t_bottom_buttons_enabled ) {
 </div>
 
 <?php
+/*
 define( 'BUGNOTE_VIEW_INC_ALLOW', true );
 include( dirname( __FILE__ ) . DIRECTORY_SEPARATOR . 'bugnote_view_inc.php' );
+*/
 layout_page_end();
 
 last_visited_issue( $t_bug_id );
