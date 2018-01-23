@@ -221,6 +221,7 @@ $t_show_severity = in_array( 'severity', $t_fields );
 $t_severity = $t_show_severity ? string_display_line( get_enum_element( 'severity', $t_bug->severity ) ) : '';
 $t_show_reproducibility = in_array( 'reproducibility', $t_fields );
 $t_reproducibility = $t_show_reproducibility ? string_display_line( get_enum_element( 'reproducibility', $t_bug->reproducibility ) ): '';
+$t_reproducibility = $t_show_reproducibility ? string_display_line( get_enum_element( 'reproducibility', $t_bug->reproducibility ) ): '';
 $t_show_status = in_array( 'status', $t_fields );
 $t_status = $t_show_status ? string_display_line( get_enum_element( 'status', $t_bug->status ) ) : '';
 $t_show_resolution = in_array( 'resolution', $t_fields );
@@ -254,9 +255,9 @@ echo '<div class="widget-toolbox padding-8 clearfix noprint">';
 echo '<div class="btn-group pull-left">';
 
 # Send Bug Reminder
-if( $t_show_reminder_link ) {
+/*if( $t_show_reminder_link ) {
 	print_small_button( $t_bug_reminder_link, lang_get( 'bug_reminder' ) );
-}
+}*/
 
 if( !is_blank( $t_wiki_link ) ) {
 	print_small_button( $t_wiki_link, lang_get( 'wiki' ) );
@@ -442,14 +443,14 @@ if( $t_show_priority || $t_show_severity || $t_show_reproducibility ) {
 	} else {
 		$t_spacer += 2;
 	}
-
+/*
 	# Reproducibility
 	if( $t_show_reproducibility ) {
 		echo '<th class="bug-reproducibility category">', lang_get( 'reproducibility' ), '</th>';
 		echo '<td class="bug-reproducibility">', $t_reproducibility, '</td>';
 	} else {
 		$t_spacer += 2;
-	}
+	}*/
 
 	# spacer
 	if( $t_spacer > 0 ) {
@@ -481,14 +482,14 @@ if( $t_show_status || $t_show_resolution ) {
 	} else {
 		$t_spacer += 2;
 	}
-
+/*
 	# Resolution
 	if( $t_show_resolution ) {
 		echo '<th class="bug-resolution category">', lang_get( 'resolution' ), '</th>';
 		echo '<td class="bug-resolution">', $t_resolution, '</td>';
 	} else {
 		$t_spacer += 2;
-	}
+	}*/
 
 	# spacer
 	if( $t_spacer > 0 ) {
@@ -530,7 +531,7 @@ if( $t_show_projection || $t_show_eta ) {
 #
 # Platform, OS, OS Version
 #
-
+/*
 if( ( $t_show_platform || $t_show_os || $t_show_os_version ) &&
 	( $t_platform || $t_os || $t_os_version )) {
 	$t_spacer = 0;
@@ -567,11 +568,11 @@ if( ( $t_show_platform || $t_show_os || $t_show_os_version ) &&
 
 	echo '</tr>';
 }
-
+*/
 #
 # Product Version, Product Build
 #
-
+/*
 if( $t_show_product_version || $t_show_product_build ) {
 	$t_spacer = 2;
 
@@ -630,7 +631,7 @@ if( $t_show_target_version || $t_show_fixed_in_version ) {
 
 	echo '</tr>';
 }
-
+*/
 #
 # Bug Details Event Signal
 #
@@ -660,7 +661,7 @@ if( $t_show_description ) {
 	echo '<td class="bug-description" colspan="5">', $t_description, '</td>';
 	echo '</tr>';
 }
-
+/*
 # Steps to Reproduce
 if( $t_show_steps_to_reproduce ) {
 	echo '<tr>';
@@ -676,7 +677,7 @@ if( $t_show_additional_information ) {
 	echo '<td class="bug-additional-information" colspan="5">', $t_additional_information, '</td>';
 	echo '</tr>';
 }
-
+*/
 # Tagging
 if( $t_show_tags ) {
 	echo '<tr>';
@@ -713,7 +714,7 @@ foreach( $t_related_custom_field_ids as $t_id ) {
 	$t_def = custom_field_get_definition( $t_id );
 
 	echo '<tr>';
-	echo '<th class="bug-custom-field category">', string_display( lang_get_defaulted( $t_def['name'] ) ), '</th>';
+	echo '<th class="bug-custom-field category">', string_display( lang_get_defaulted( $t_def['name'] ) ), 'asdasd</th>';
 	echo '<td class="bug-custom-field" colspan="5">';
 	print_custom_field_value( $t_def, $t_id, $f_bug_id );
 	echo '</td></tr>';
@@ -727,7 +728,7 @@ if( $t_custom_fields_found ) {
 
 echo '</tbody></table>';
 echo '</div></div></div></div></div>';
-
+/*
 # User list sponsoring the bug
 if( $t_show_sponsorships_box ) {
 	define( 'BUG_SPONSORSHIP_LIST_VIEW_INC_ALLOW', true );
@@ -738,7 +739,7 @@ if( $t_show_sponsorships_box ) {
 if( $t_show_relationships_box ) {
 	relationship_view_box( $t_bug->id );
 }
-
+*/
 # User list monitoring the bug
 if( $t_show_monitor_box ) {
 	define( 'BUG_MONITOR_LIST_VIEW_INC_ALLOW', true );

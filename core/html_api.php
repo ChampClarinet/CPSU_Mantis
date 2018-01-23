@@ -1036,9 +1036,11 @@ function html_button_bug_change_status( BugData $p_bug ) {
 
 		# space at beginning of line is important
 		foreach( $t_enum_list as $t_key => $t_val ) {
-			echo '<option value="' . $t_key . '" ';
-			check_selected( $t_key, $t_default );
-			echo '>' . $t_val . '</option>';
+			if($t_key == 10 || $t_key == 90){
+                echo '<option value="' . $t_key . '" ';
+                check_selected( $t_key, $t_default );
+                echo '>' . $t_val . '</option>';
+            }
 		}
 		echo '</select>';
 
@@ -1329,11 +1331,11 @@ function html_buttons_view_bug_page( $p_bug_id ) {
 	echo '<div class="pull-left padding-right-2">';
 	html_button_bug_close( $t_bug );
 	echo '</div>';
-
+/*
 	# MOVE button
 	echo '<div class="pull-left padding-right-2">';
 	html_button_bug_move( $p_bug_id );
-	echo '</div>';
+	echo '</div>';*/
 
 	# DELETE button
 	echo '<div class="pull-left padding-right-2">';

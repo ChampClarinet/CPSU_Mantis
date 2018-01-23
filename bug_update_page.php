@@ -427,13 +427,13 @@ if( $t_show_status || $t_show_resolution ) {
 		$t_spacer += 2;
 	}
 
-	if( $t_show_resolution ) {
+	/*if( $t_show_resolution ) {
 		# Resolution
 		echo '<th class="category"><label for="resolution">' . lang_get( 'resolution' ) . '</label></th>';
 		echo '<td><select ' . helper_get_tab_index() . ' id="resolution" name="resolution" class="input-sm">';
 		print_enum_string_option_list( 'resolution', $t_bug->resolution );
 		echo '</select></td>';
-	} else {
+	} else*/ {
 		$t_spacer += 2;
 	}
 

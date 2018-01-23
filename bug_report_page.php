@@ -564,7 +564,7 @@ if( $t_show_attachments ) {
 <?php } ?>
 
 <?php if( $t_show_additional_info ) { ?>
-	<tr>
+	<tr hidden>
 		<th class="category">
 			<label for="additional_info"><?php print_documentation_link( 'additional_information' ) ?></label>
 		</th>

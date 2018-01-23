@@ -66,7 +66,7 @@ function summary_helper_print_row( $p_label, $p_open, $p_resolved, $p_closed, $p
 	echo '<tr>';
 	printf( '<td class="width50">%s</td>', $p_label );
 	printf( '<td class="width12 align-right">%s</td>', $p_open );
-	printf( '<td class="width12 align-right">%s</td>', $p_resolved );
+	//printf( '<td class="width12 align-right">%s</td>', $p_resolved );
 	printf( '<td class="width12 align-right">%s</td>', $p_closed );
 	printf( '<td class="width12 align-right">%s</td>', $p_total );
 	echo '</tr>';
@@ -777,13 +777,13 @@ function summary_print_by_project( array $p_projects = array(), $p_level = 0, ar
 				} else {
 					$p_cache[$t_project_id]['closed'] = $t_bugcount;
 				}
-			} else if( $t_resolved_val <= $t_status ) {
+			} else /*if( $t_resolved_val <= $t_status ) {
 				if( isset( $p_cache[$t_project_id]['resolved'] ) ) {
 					$p_cache[$t_project_id]['resolved'] += $t_bugcount;
 				} else {
 					$p_cache[$t_project_id]['resolved'] = $t_bugcount;
 				}
-			} else {
+			} else */{
 				if( isset( $p_cache[$t_project_id]['open'] ) ) {
 					$p_cache[$t_project_id]['open'] += $t_bugcount;
 				} else {

@@ -1046,9 +1046,11 @@ function print_status_option_list( $p_select_label, $p_current_value = 0, $p_all
 		reset( $t_enum_list );
 		echo '<select class="input-sm" ' . helper_get_tab_index() . ' id="' . $p_select_label . '" name="' . $p_select_label . '">';
 		foreach( $t_enum_list as $t_key => $t_val ) {
-			echo '<option value="' . $t_key . '"';
-			check_selected( $t_key, $p_current_value );
-			echo '>' . string_html_specialchars( $t_val ) . '</option>';
+			if($t_key == 10 || $t_key==90){
+                echo '<option value="' . $t_key . '"';
+                check_selected( $t_key, $p_current_value );
+                echo '>' . string_html_specialchars( $t_val ) . '</option>';
+            }
 		}
 		echo '</select>';
 	} else if( count( $t_enum_list ) == 1 ) {
@@ -1081,7 +1083,7 @@ function print_project_access_levels_option_list( $p_val, $p_project_id = null )
 	$t_enum_values = MantisEnum::getValues( $t_access_levels_enum_string );
 	foreach ( $t_enum_values as $t_enum_value ) {
 		# a user must not be able to assign another user an access level that is higher than theirs.
-		if( $t_enum_value > $t_current_user_access_level ) {
+		if( $t_enum_value > $t_current_user_access_level || ($t_enum_value >= 25 && $t_enum_value <= 40)) {
 			continue;
 		}
 		$t_access_level = get_enum_element( 'access_levels', $t_enum_value );

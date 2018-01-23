@@ -115,9 +115,9 @@ $t_orct_arr = preg_split( '/[\)\/\(]/', lang_get( 'orct' ), -1, PREG_SPLIT_NO_EM
 
 $t_orcttab = '';
 foreach ( $t_orct_arr as $t_orct_s ) {
-	$t_orcttab .= '<th class="align-right">';
-	$t_orcttab .= $t_orct_s;
-	$t_orcttab .= '</th>';
+     $t_orcttab .= '<th class="align-right">';
+     $t_orcttab .= $t_orct_s;
+     $t_orcttab .= '</th>';
 }
 
 layout_page_header( lang_get( 'summary_link' ) );
@@ -299,19 +299,20 @@ print_summary_submenu();
 	</div>
 
 	<!-- BY RESOLUTION -->
+    <!--
 	<div class="space-10"></div>
 	<div class="widget-box table-responsive">
 		<table class="table table-hover table-bordered table-condensed table-striped">
 		<thead>
 			<tr>
-				<th class="width-35"><?php echo lang_get( 'by_resolution' ) ?></th>
-				<?php echo $t_orcttab ?>
+				<th class="width-35"><?php /*echo lang_get( 'by_resolution' ) */?></th>
+				<?php /*echo $t_orcttab */?>
 			</tr>
 		</thead>
-		<?php summary_print_by_enum( 'resolution' ) ?>
+		<?php /*summary_print_by_enum( 'resolution' ) */?>
 	</table>
 	</div>
-
+-->
 	<!-- BY PRIORITY -->
 	<div class="space-10"></div>
 	<div class="widget-box table-responsive">
@@ -341,70 +342,71 @@ print_summary_submenu();
 	</div>
 
 	<!-- REPORTER EFFECTIVENESS -->
-	<div class="space-10"></div>
+	<!--
+    <div class="space-10"></div>
 	<div class="widget-box table-responsive">
 		<table class="table table-hover table-bordered table-condensed table-striped">
 		<thead>
 			<tr>
-				<th class="width-35"><?php echo lang_get( 'reporter_effectiveness' ) ?></th>
-				<th class="align-right"><?php echo lang_get( 'severity' ); ?></th>
-				<th class="align-right"><?php echo lang_get( 'errors' ); ?></th>
-				<th class="align-right"><?php echo lang_get( 'total' ); ?></th>
+				<th class="width-35"><?php /*echo lang_get( 'reporter_effectiveness' ) */?></th>
+				<th class="align-right"><?php /*echo lang_get( 'severity' ); */?></th>
+				<th class="align-right"><?php /*echo lang_get( 'errors' ); */?></th>
+				<th class="align-right"><?php /*echo lang_get( 'total' ); */?></th>
 			</tr>
 		</thead>
-		<?php summary_print_reporter_effectiveness( config_get( 'severity_enum_string' ), config_get( 'resolution_enum_string' ) ) ?>
+		<?php /*summary_print_reporter_effectiveness( config_get( 'severity_enum_string' ), config_get( 'resolution_enum_string' ) ) */?>
 	</table>
 	</div>
-
+-->
 </div>
 
 <!-- BOTTOM -->
-<div class="col-md-12 col-xs-12">
-
+<!--<div class="col-md-12 col-xs-12">
+-->
 	<!-- REPORTER BY RESOLUTION -->
-	<div class="space-10"></div>
+<!--	<div class="space-10"></div>
 	<div class="widget-box table-responsive">
 		<table class="table table-hover table-bordered table-condensed table-striped">
 		<thead>
 			<tr>
-				<th class="width-15"><?php echo lang_get( 'reporter_by_resolution' ) ?></th>
+				<th class="width-15"><?php /*echo lang_get( 'reporter_by_resolution' ) */?></th>
 				<?php
-					$t_resolutions = MantisEnum::getValues( config_get( 'resolution_enum_string' ) );
+/*					$t_resolutions = MantisEnum::getValues( config_get( 'resolution_enum_string' ) );
 
 					foreach ( $t_resolutions as $t_resolution ) {
 						echo '<th class="align-right">', get_enum_element( 'resolution', $t_resolution ), "</th>\n";
 					}
 
 					echo '<th class="align-right">', lang_get( 'percentage_errors' ), "</th>\n";
-				?>
+				*/?>
 			</tr>
 		</thead>
-		<?php summary_print_reporter_resolution( config_get( 'resolution_enum_string' ) ) ?>
+		<?php /*summary_print_reporter_resolution( config_get( 'resolution_enum_string' ) ) */?>
 	</table>
 	</div>
-
+-->
 	<!-- DEVELOPER BY RESOLUTION -->
-	<div class="space-10"></div>
+<!--	<div class="space-10"></div>
 	<div class="widget-box table-responsive">
 		<table class="table table-hover table-bordered table-condensed table-striped">
 		<thead>
 			<tr>
-				<th class="width-15"><?php echo lang_get( 'developer_by_resolution' ) ?></th>
+				<th class="width-15"><?php /*echo lang_get( 'developer_by_resolution' ) */?></th>
 				<?php
-					$t_resolutions = MantisEnum::getValues( config_get( 'resolution_enum_string' ) );
+/*					$t_resolutions = MantisEnum::getValues( config_get( 'resolution_enum_string' ) );
 
 					foreach ( $t_resolutions as $t_resolution ) {
 						echo '<th class="align-right">', get_enum_element( 'resolution', $t_resolution ), "</th>\n";
 					}
 
 					echo '<th class="align-right">', lang_get( 'percentage_fixed' ), "</th>\n";
-				?>
+				*/?>
 			</tr>
 		</thead>
-		<?php summary_print_developer_resolution( config_get( 'resolution_enum_string' ) ) ?>
+		<?php /*summary_print_developer_resolution( config_get( 'resolution_enum_string' ) ) */?>
 	</table>
 	</div>
-
+-->
 </div>
 
 </div>
